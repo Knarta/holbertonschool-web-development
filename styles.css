@@ -254,43 +254,29 @@ blockquote {
 .video-cards::after {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 77px;
+  left: 127.5px;
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: white;
   border-radius: 50%;
   z-index: 10;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .video-cards::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 77px;
+  left: 127.5px;
   transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background-image: url('images/play.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 20px;
+  height: 20px;
+  background-color: #c271ff;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
   z-index: 11;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
-.video-cards:hover::after {
-  background-color: rgba(194, 113, 255, 0.9);
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.video-cards:hover::before {
-  transform: translate(-50%, -50%) scale(1.1);
-}
 
 .video-cards h2 {
   font-weight: 700;
