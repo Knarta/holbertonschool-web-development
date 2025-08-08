@@ -240,10 +240,56 @@ blockquote {
   width: 255px;
 }
 
+.video-cards {
+  position: relative;
+}
+
 .video-cards img {
   width: 255px;
   height: 154px;
   border-radius: 8px;
+}
+
+/* Icône play*/
+.video-cards::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-cards::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-image: url('images/play.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 11;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-cards:hover::after {
+  background-color: rgba(194, 113, 255, 0.9);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-cards:hover::before {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .video-cards h2 {
