@@ -248,14 +248,15 @@ blockquote {
   width: 255px;
   height: 154px;
   border-radius: 8px;
+  position: relative;
 }
 
 /* Icône play*/
-.video-cards::after {
+.video-cards img::after {
   content: '';
   position: absolute;
-  top: 77px;
-  left: 127.5px;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
@@ -264,11 +265,11 @@ blockquote {
   z-index: 10;
 }
 
-.video-cards::before {
+.video-cards img::before {
   content: '';
   position: absolute;
-  top: 77px;
-  left: 127.5px;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
